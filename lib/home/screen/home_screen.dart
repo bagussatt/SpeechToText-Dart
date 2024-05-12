@@ -23,6 +23,10 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Text("Halaman Utama"),
         centerTitle: true,
         backgroundColor: Colors.greenAccent,
+        flexibleSpace: Image(
+          image: AssetImage('assets/rs_pku.jpeg'),
+          fit: BoxFit.cover,
+        ),
       ),
       drawer: Drawer(
         child: ListView(
