@@ -20,11 +20,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Halaman Utama"),
         centerTitle: true,
         backgroundColor: Colors.greenAccent,
         flexibleSpace: Image(
-          image: AssetImage('assets/rs_pku.jpeg'),
+          image: AssetImage('assets/rs_pkum.jpeg'),
           fit: BoxFit.cover,
         ),
       ),
@@ -39,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Text(
                 'Menu Navigasi',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontSize: 24,
                 ),
               ),
@@ -65,6 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
         alignment: Alignment.center,
         child: Column(
           children: [
+            Text('Halaman Utama'),
             Text(
               kata,
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
