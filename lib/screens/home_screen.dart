@@ -98,7 +98,7 @@ class _HomeScreenState extends State<HomeScreen> {
             setState(() {
               tekan = false;
               history.add(kata); // Add current text to history
-              kata = "Tekan dan tahan Tombol untuk Memulai"; // Reset text
+              kata = "Tekan untuk memulai kembali"; // Reset text
             });
           },
           child: CircleAvatar(
