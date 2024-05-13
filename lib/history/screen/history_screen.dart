@@ -8,8 +8,14 @@ class HistoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("Histori"),
+        backgroundColor: Colors.white,
+        title: Text(
+          "Histori",
+          style: TextStyle(color: Colors.black),
+        ),
+        iconTheme: IconThemeData(color: Colors.black),
         centerTitle: true,
       ),
       body: ListView.builder(
