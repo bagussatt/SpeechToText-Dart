@@ -28,6 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
       drawer: Drawer(
+        backgroundColor: Colors.white,
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
@@ -44,8 +45,14 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ListTile(
-              leading: Icon(Icons.history),
-              title: Text('Lihat Histori'),
+              leading: Icon(
+                Icons.history,
+                color: Colors.black,
+              ),
+              title: Text(
+                'Lihat Histori',
+                style: TextStyle(color: Colors.black),
+              ),
               onTap: () {
                 Navigator.pop(context); // Tutup drawer saat item diklik
                 Navigator.push(
@@ -60,14 +67,21 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
       body: Container(
+        color: Colors.white,
         padding: EdgeInsets.symmetric(vertical: 150),
         alignment: Alignment.center,
         child: Column(
           children: [
-            Text('Halaman Utama'),
+            Text(
+              'Halaman Utama',
+              style: TextStyle(color: Colors.black),
+            ),
             Text(
               kata,
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+              style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.black),
             ),
           ],
         ),
